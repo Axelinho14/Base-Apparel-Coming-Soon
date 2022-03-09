@@ -1,0 +1,213 @@
+:root{
+    /* Color */
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+*{
+    margin: 0cm;
+    padding: 0cm;
+    box-sizing: border-box;
+    font-family: "Josefin Sans";
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content:space-between ;
+    background: url(image/bg-pattern-desktop.svg),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-repeat: no-repeat;
+    background-size: 62%;
+}
+.left-container{
+    margin-left: 5cm;
+    margin-top: 2cm;  
+}
+.logo{
+    width:35%;
+}
+.title{
+    margin-top: 5cm;
+    font-size: 2cm;
+    text-transform: uppercase;
+    letter-spacing: 0.6cm;
+    color: var(--Desaturated-Red);
+    font-variation-settings: "wght" 300;
+    line-height: 2.1cm;
+}
+.title span{
+    color: var(--Dark-Grayish-Red);
+    font-variation-settings: "wght" 600;
+}
+.desc{
+    margin-top: 0.8cm;
+    color: var(--Desaturated-Red);
+    font-size: 0.5cm;
+    line-height: 0.9cm;
+}
+.div-email{
+    margin-top: 1.5cm;
+}
+#email{
+    background-color: rgba(255, 255, 255, 0);
+    width: 13.5cm;
+    height: 1.6cm;
+    border: 1px solid var(--Desaturated-Red);
+    border-radius: 2cm;
+    padding-left: 1cm;
+    padding-top: 0.1cm;
+    position: relative;
+}
+#email:focus{
+    outline: none;
+    border: 1px solid var(--Desaturated-Red);
+}
+#email::placeholder{
+    font-size: 0.5cm;
+    vertical-align: middle; 
+    color: var(--Desaturated-Red);
+}
+#email:required{
+    color: var(--Desaturated-Red);
+    font-size:0.5cm;
+}
+#button{
+    height: 1.6cm;
+    width: 3cm;
+    border-radius: 1cm;
+    border: 0px;
+    position: absolute;
+    left: 15.6cm;
+    background:linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+}
+#button:hover{
+    background: Linear-gradient(135deg,hsl(0, 87%, 94%),hsl(0, 96%, 82%));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+#error-message{
+    display: none;
+}
+.error-icon{
+    position: absolute;
+    top: 19.9cm;
+    left: 14.5cm;
+}
+.error-p{
+    margin-left: 1cm;
+    margin-top: 0.4cm;
+    font-size: 0.4cm;
+    color: var(--Soft-Red);
+}
+#valid-message{
+    display: none;
+}
+#valid-message p{
+    margin-left: 1cm;
+    margin-top: 0.4cm;
+    font-size: 0.4cm;
+    color: rgb(19, 163, 19);
+}
+.woman-mobile{
+    display: none;
+}
+.br2{
+    display: none;
+}
+@media screen and (max-width: 625px){
+    .container{
+        flex-direction:column-reverse;
+        justify-content: center;
+        background-image:none;
+        min-height: vh
+    }
+    .left-container{
+        height: 22cm;
+        margin-left: 0cm;
+        margin-top: 0cm; 
+    }
+    .woman{
+        display:none
+    }
+    .woman-mobile{
+        display: flex;
+        margin-top: 0.8cm;
+        margin-left: cm;
+        width: 100%;
+    }
+    .logo{
+        margin-top:1cm;
+        margin-left: 1cm;
+        width:27%;
+    }
+    .title{
+        margin-top: 1.5cm;
+        text-align: center;
+        font-size: 1cm;
+        letter-spacing: 0.2cm;
+        font-variation-settings: "wght" 200;
+        line-height: 1cm;
+        font-weight: 200;
+    }
+    .title span{
+        font-weight: 600;
+    }
+    .br1{
+        display: none;
+    }
+    .br2{
+        display: flex;
+    }
+    .desc{
+        margin-top: 0.6cm;
+        font-size: 0.4cm;
+        line-height: 0.9cm;
+        text-align: center;
+    }
+    .div-email{
+        margin-top: 1cm;
+        text-align: center;
+    }
+    #email{
+        background-color: rgba(255, 255, 255, 0);
+        width: 9.5cm;
+        height: 1.6cm;
+        padding-left: 0.8cm;
+    }
+    #form{
+        position: relative;
+    }
+    #button{
+        width: 2.5cm;
+        left: 7.8cm;
+    }
+    #error-message{
+        display: none;
+        position: relative;
+    }
+    .error-icon{
+        position: absolute;
+        top: -1.1cm;
+        left: 7cm;
+    }
+    .error-p{
+        margin-left: 1.4cm;
+        margin-top: 0.3cm;
+        font-size: 0.35cm;
+    }
+    #valid-message{
+        display: none;
+    }
+    #valid-message p{
+        margin-left: 1.4cm;
+        margin-top: 0.3cm;
+        font-size: 0.35cm;
+    }
+}
+
+    
+
+

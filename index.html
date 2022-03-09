@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Frontend Mentor | Base Apparel Coming Soon</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="image/favicon-32x32.png"/>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="left-container">
+            <img class="logo" src="image/logo.svg" alt="logo base apparel">
+            <img class="woman-mobile" src="image/hero-mobile.jpg" alt="picture of woman">
+            <h1 class="title">We're<br><span>coming<br>soon</span></h1>
+            <p class="desc">Hello fellow shoppers! We're currently building<br class="br2"> our new<br class="br1"> fashion store. Add your email below to<br class="br2"> stay up-to-date with<br class="br1"> announcements and our<br class="br2"> launch deals.</p>
+            <div class="div-email">
+                <form id="form">
+                    <!-- <label for="email"></label> -->
+                    <input id="email" type="email" name="email" placeholder="Email Address" required>
+                    <button id="button" type="submit"><img src="image/icon-arrow.svg" alt="arrow icon"></button>
+                    <div id="error-message">
+                        <img class="error-icon" src="image/icon-error.svg">
+                        <p class="error-p">Please provide a valid email</p>
+                    </div>
+                    <div id="valid-message">
+                        <p>Valid email !</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <img  class="woman" src="image/hero-desktop.jpg" alt="picture of woman">
+    </main>
+</body>
+</html>
